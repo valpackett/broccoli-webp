@@ -1,0 +1,27 @@
+{
+  "name": "broccoli-webp",
+  "description": "JPEG/PNG to WebP converter for Broccoli",
+  "version": "0.1.0",
+  "author": "Greg V <floatboth@me.com>",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myfreeweb/broccoli-webp"
+  },
+  "keywords": [
+    "broccoli-plugin",
+    "webp",
+    "cwebp",
+    "image",
+    "png",
+    "jpeg",
+    "jpg",
+    "convert"
+  ],
+  "dependencies": {
+    "broccoli-filter": "^0.1.4",
+    "optional": "^0.1.0-2",
+    "cwebp": "^0.1.8"
+  }
+}
