@@ -1,27 +1,37 @@
 {
-  "name": "broccoli-webp",
-  "description": "JPEG/PNG to WebP converter for Broccoli",
-  "version": "0.1.2",
-  "author": "Greg V <floatboth@me.com>",
-  "main": "index.js",
-  "license": "Apache-2.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/myfreeweb/broccoli-webp"
-  },
-  "keywords": [
-    "broccoli-plugin",
-    "webp",
-    "cwebp",
-    "image",
-    "png",
-    "jpeg",
-    "jpg",
-    "convert"
-  ],
-  "dependencies": {
-    "broccoli-filter": "^0.1.6",
-    "optional": "^0.1.0-2",
-    "cwebp": "^0.1.9"
-  }
+	"name": "broccoli-webp",
+	"description": "JPEG/PNG to WebP converter for Broccoli",
+	"version": "0.1.3",
+	"author": "Greg V <floatboth@me.com>",
+	"engines": {
+		"node": "*"
+	},
+	"main": "index",
+	},
+	"keywords": [
+		"broccoli-plugin",
+		"webp",
+		"cwebp",
+		"image",
+		"png",
+		"jpeg",
+		"jpg",
+		"convert"
+	],
+	"dependencies": {
+		"broccoli-filter": "^0.1.6",
+		"optional": "^0.1.0-2",
+		"cwebp": "^0.1.9"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/myfreeweb/broccoli-webp"
+	},
+	"license": [{
+		"type": "WTFPL",
+		"url": "https://github.com/myfreeweb/broccoli-webp/blob/master/COPYING"
+	}],
+	"bugs": {
+		"url": "https://github.com/myfreeweb/broccoli-webp/issues"
+	}
 }
