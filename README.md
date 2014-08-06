@@ -1,4 +1,4 @@
-# broccoli-webp [![npm version](https://img.shields.io/npm/v/broccoli-webp.svg?style=flat)](https://www.npmjs.org/package/broccoli-webp) [![npm downloads](https://img.shields.io/npm/dm/broccoli-webp.svg?style=flat)](https://www.npmjs.org/package/broccoli-webp) [![WTFPL](https://img.shields.io/badge/license-WTFPL-brightgreen.svg?style=flat)](https://www.tldrlegal.com/l/wtfpl)
+# broccoli-webp [![npm version](https://img.shields.io/npm/v/broccoli-webp.svg?style=flat)](https://www.npmjs.org/package/broccoli-webp) [![npm downloads](https://img.shields.io/npm/dm/broccoli-webp.svg?style=flat)](https://www.npmjs.org/package/broccoli-webp) [![Dependency Status](https://img.shields.io/gemnasium/myfreeweb/broccoli-webp.svg?style=flat)](https://gemnasium.com/myfreeweb/broccoli-webp) [![WTFPL](https://img.shields.io/badge/license-WTFPL-brightgreen.svg?style=flat)](https://www.tldrlegal.com/l/wtfpl)
 
 This [Broccoli][] plugin converts JPEG/PNG files to [WebP][].
 
