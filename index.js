@@ -5,12 +5,9 @@ var Webp = require('cwebp')
 var optional = require('optional')
 
 function newWebp(source) {
-	var npm_webp_bin = optional('webp-bin')
-	var npm_webp = optional('webp')
-	if (npm_webp_bin !== null) {
-		return new Webp(source, npm_webp_bin.path)
-	} else if (npm_webp !== null) {
-		return new Webp(source, npm_webp.cwebp)
+	var npm_bin = optional('cwebp-bin')
+	if (npm_bin !== null) {
+		return new Webp(source, npm_bin)
 	} else {
 		return new Webp(source)
 	}

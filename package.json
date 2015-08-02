@@ -1,7 +1,7 @@
 {
   "name": "broccoli-webp",
   "description": "JPEG/PNG to WebP converter for Broccoli",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "author": "Greg V <greg@unrelenting.technology>",
   "engines": {
     "node": "*"
@@ -17,11 +17,6 @@
     "jpg",
     "convert"
   ],
-  "dependencies": {
-    "broccoli-filter": "^0.2.0",
-    "optional": "^0.1.0-2",
-    "cwebp": "^1.1.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/myfreeweb/broccoli-webp"
@@ -30,10 +25,18 @@
   "bugs": {
     "url": "https://github.com/myfreeweb/broccoli-webp/issues"
   },
+  "dependencies": {
+    "broccoli-filter": "^0.2.0",
+    "optional": "^0.1.3",
+    "cwebp": "^1.1.0"
+  },
   "devDependencies": {
     "broccoli": "^0.16.5",
     "tap-spec": "^4.0.2",
     "tape": "^4.0.1"
+  },
+  "optionalDependencies": {
+    "cwebp-bin": "^3.0.0"
   },
   "scripts": {
     "test": "tape 'test/*.js' | tap-spec"

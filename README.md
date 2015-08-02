@@ -7,19 +7,18 @@ This [Broccoli] plugin converts JPEG/PNG files to [WebP].
 
 ## Installation
 
-First, get cwebp...
-
-- OS X: `brew install webp`
-- FreeBSD: `pkg install graphics/webp`
-- Ubuntu/Debian: `sudo apt-get install webp`
-
-... OR add [webp-bin](https://www.npmjs.org/package/webp-bin) or [webp](https://www.npmjs.org/package/webp) to your deps too.
-
-Second, install as any other broccoli plugin:
+Install just like any other broccoli plugin:
 
 ```bash
 npm install --save-dev broccoli-webp
 ```
+
+[cwebp-bin](https://www.npmjs.org/package/cwebp-bin) is listed as an optional dependency.  
+If you can't install it, install cwebp manually:
+
+- FreeBSD: `pkg install graphics/webp`
+- OS X: `brew install webp`
+- Ubuntu/Debian: `sudo apt-get install webp`
 
 ## Usage
 
