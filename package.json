@@ -1,7 +1,7 @@
 {
 	"name": "broccoli-webp",
 	"description": "JPEG/PNG to WebP converter for Broccoli",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"author": "Greg V <greg@unrelenting.technology>",
 	"engines": {
 		"node": "*"
@@ -18,7 +18,7 @@
 		"convert"
 	],
 	"dependencies": {
-		"broccoli-filter": "^0.1.6",
+		"broccoli-filter": "^0.2.0",
 		"optional": "^0.1.0-2",
 		"cwebp": "^1.1.0"
 	},
