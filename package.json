@@ -1,33 +1,40 @@
 {
-	"name": "broccoli-webp",
-	"description": "JPEG/PNG to WebP converter for Broccoli",
-	"version": "0.1.5",
-	"author": "Greg V <greg@unrelenting.technology>",
-	"engines": {
-		"node": "*"
-	},
-	"main": "index",
-	"keywords": [
-		"broccoli-plugin",
-		"webp",
-		"cwebp",
-		"image",
-		"png",
-		"jpeg",
-		"jpg",
-		"convert"
-	],
-	"dependencies": {
-		"broccoli-filter": "^0.2.0",
-		"optional": "^0.1.0-2",
-		"cwebp": "^1.1.0"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/myfreeweb/broccoli-webp"
-	},
-	"license": "Unlicense",
-	"bugs": {
-		"url": "https://github.com/myfreeweb/broccoli-webp/issues"
-	}
+  "name": "broccoli-webp",
+  "description": "JPEG/PNG to WebP converter for Broccoli",
+  "version": "0.1.5",
+  "author": "Greg V <greg@unrelenting.technology>",
+  "engines": {
+    "node": "*"
+  },
+  "main": "index",
+  "keywords": [
+    "broccoli-plugin",
+    "webp",
+    "cwebp",
+    "image",
+    "png",
+    "jpeg",
+    "jpg",
+    "convert"
+  ],
+  "dependencies": {
+    "broccoli-filter": "^0.2.0",
+    "optional": "^0.1.0-2",
+    "cwebp": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myfreeweb/broccoli-webp"
+  },
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/myfreeweb/broccoli-webp/issues"
+  },
+  "devDependencies": {
+    "tap-spec": "^4.0.2",
+    "tape": "^4.0.1"
+  },
+  "scripts": {
+    "test": "tape 'test/*.js' | tap-spec"
+  }
 }
