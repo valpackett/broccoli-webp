@@ -23,12 +23,12 @@ If you can't install it, install cwebp manually:
 ## Usage
 
 ```js
-var convertToWebP = require('broccoli-webp');
+var Webp = require('broccoli-webp')
 
-var outputTree = convertToWebP(inputTree, options);
+var outputNode = new Webp(inputNode, options)
 ```
 
-- **`inputTree`**: A tree that contains the images you want to convert.
+- **`inputNode`**: A node (tree) that contains the images you want to convert.
 - **`options`**: A hash of options. Currently supported:
     - **`quality`** (number, 0..100): compression quality for JPEGs (PNGs are converted to lossless WebP)
     - **`alphaQuality`** (number, 0..100): transparency quality
@@ -37,21 +37,20 @@ var outputTree = convertToWebP(inputTree, options);
 ## Example
 
 ```js
-var convertToWebP = require('broccoli-webp');
+var Webp = require('broccoli-webp')
 
-var img = "img";
+var img = 'img'
 
-var webp = convertToWebP(img, {quality: 80});
+var webp = new Webp(img, {quality: 80})
 
-return [img, webp];
+return [img, webp]
 ```
 
 ## Contributing
 
 Please feel free to submit pull requests!
-Bugfixes and simple non-breaking improvements will be accepted without any questions :-)
 
-By participating in this project you agree to follow the [Contributor Code of Conduct](http://contributor-covenant.org/version/1/2/0/).
+By participating in this project you agree to follow the [Contributor Code of Conduct](http://contributor-covenant.org/version/1/4/).
 
 ## License
 

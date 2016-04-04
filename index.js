@@ -4,7 +4,7 @@ var Filter = require('broccoli-filter')
 var Webp = require('cwebp')
 var optional = require('optional')
 
-function newWebp(source) {
+function newWebp (source) {
 	var npm_bin = optional('cwebp-bin')
 	if (npm_bin !== null) {
 		return new Webp(source, npm_bin)
@@ -13,7 +13,10 @@ function newWebp(source) {
 	}
 }
 
-function WebPFilter(inputNode, options) {
+WebPFilter.prototype = Object.create(Filter.prototype)
+
+WebPFilter.prototype.constructor = WebPFilter
+function WebPFilter (inputNode, options) {
 	if (!(this instanceof WebPFilter)) {
 		return new WebPFilter(inputNode, options)
 	}
@@ -22,13 +25,11 @@ function WebPFilter(inputNode, options) {
 	this.options = options || {}
 }
 
-WebPFilter.prototype = Object.create(Filter.prototype)
-WebPFilter.prototype.constructor = WebPFilter
 
 WebPFilter.prototype.extensions = ['png', 'jpg', 'jpeg']
 WebPFilter.prototype.targetExtension = 'webp'
 
-WebPFilter.prototype.processFile = function(srcDir, destDir, relativePath) {
+WebPFilter.prototype.processFile = function (srcDir, destDir, relativePath) {
 	var webp = newWebp(srcDir + '/' + relativePath)
 	webp.multiThreading(true)
 	var options = this.options
